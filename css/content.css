@@ -1,0 +1,71 @@
+body{
+    height: 1096px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 25%;
+    grid-auto-flow: row;
+    height: -webkit-fill-available
+}
+.g1{
+    background-color: #FFAFCA;
+}
+.g2{
+    background-color: #EE2E24;
+}
+.g3{
+    background-color: #F3EBDD;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+.g4{
+    background-color: #00662F;
+}
+.g5{
+    background-color: #EE2E24;
+}
+.g6{
+    background-color: #EE2E24;
+    grid-row: span 2;
+}
+.g7{
+    background-color: #00662F;
+}
+.g8{
+    background-color: #FFAFCA;
+}
+.g9{
+    background-color: #00662F;
+    grid-row: span 2;
+}
+.g10{
+    background-color: #FFAFCA;
+    grid-row: span 2;
+}
+.g11{
+    background-color: #00662F;
+    grid-column: span 2;
+}
+.g12{
+    background-color: #FFAFCA;
+}
+.g13{
+    background-color: #EE2E24;
+}
+.g14{
+    background-color: #00662F;
+}
+.g15{
+    background-color: #EE2E24;
+}
+.g16{
+    background-color: #FFAFCA;
+}
+.g17{
+    background-color: #00662F;
+    grid-column: span 2;
+}
+.g18{
+    background-color: #FFAFCA;
+}
