@@ -1,0 +1,44 @@
+
+  
+  .tickers {
+    position: relative;
+    white-space: nowrap;
+    background: #FFAFCA;
+    overflow: hidden;
+  }
+  
+  .ticker {
+    display: flex;
+    position: absolute;
+    font-size: 1500%;
+    font-style: normal;
+    font-weight: 400;
+    color: #EE2E24;
+    animation: startLine 5s linear, marquee 5s linear 5s infinite;
+    width: 2630px;
+    margin-top: 4%;
+  }
+  
+  .ticker__head {
+    text-align: center;
+    margin-left: 2%;
+    font-family: OrtlandRegular;
+  }
+  
+  @keyframes startLine {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

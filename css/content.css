@@ -4,7 +4,7 @@ body{
 .wrapper{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 25%;
+    /*grid-template-rows: 25vh;*/
     grid-auto-flow: row;
     height: -webkit-fill-available
 }
@@ -14,10 +14,9 @@ body{
 .g2{
     background-color: #EE2E24;
 }
-.g3{
-    background-color: #F3EBDD;
+.tickers{
+    background-color: #FFAFCA;
     grid-column: span 3;
-    grid-row: span 2;
 }
 .g4{
     background-color: #00662F;
@@ -31,6 +30,10 @@ body{
 }
 .g7{
     background-color: #00662F;
+}
+.g3{
+    background-color: #EE2E24;
+    grid-column: span 3;
 }
 .g8{
     background-color: #FFAFCA;
