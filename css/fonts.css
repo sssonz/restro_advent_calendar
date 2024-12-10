@@ -4,3 +4,15 @@
     font-weight: 900;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Arapey-Regular';
+    src: url(../fonts/Arapey-Regular.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arapey-Italic';
+    src: url(../fonts/Arapey-Italic.ttf);
+    font-weight: 900;
+    font-style: italic;
+}

@@ -42,3 +42,83 @@
       transform: translateX(-100%);
     }
   }
+  .bl_star{
+    background-image: url(../img/Star.svg);
+    position: absolute;
+    width: 14.2%;
+    height: 17%;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+  }
+  @-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .num25 {
+    display: flex;
+    position: absolute;
+    width: 14.34%;
+    height: 16.8%;
+    align-items: center;
+    justify-content: center;
+    background-color: #00662F;
+    animation: swing-in-left-bck 3s cubic-bezier(0.175, 0.885, 0.320, 1) infinite reverse both;
+    }
+  p{
+    font-family: OrtlandRegular;;
+    font-size: 7vh;
+    color: #F3EBDD;
+  }
+ 
+  @keyframes swing-in-left-bck {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+    25% {
+      -webkit-transform: rotateY(-80deg);
+              transform: rotateY(-80deg);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+    50% {
+      -webkit-transform: rotateY(-60deg);
+              transform: rotateY(-60deg);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+    75% {
+      -webkit-transform: rotateY(-80deg);
+              transform: rotateY(-80deg);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+    100% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+  }
