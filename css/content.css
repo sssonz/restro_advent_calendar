@@ -1,42 +1,55 @@
-body{
-    height: 1096px;
-}
 .wrapper{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    /*grid-template-rows: 25vh;*/
-    grid-auto-flow: row;
-    height: -webkit-fill-available
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
 }
 .g1{
     background-color: #FFAFCA;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .g2{
     background-color: #EE2E24;
+    position: relative;
+    overflow: hidden;
 }
-.tickers{
-    background-color: #FFAFCA;
+.g3{
+    background-color: #EE2E24;
     grid-column: span 3;
+    grid-row: span 2;
+    position: relative;
 }
 .g4{
     background-color: #00662F;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .g5{
-    background-color: #EE2E24;
+    background-color: #F3EBDD;
 }
 .g6{
     background-color: #EE2E24;
     grid-row: span 2;
 }
 .g7{
-    background-color: #F3EBDD;
-}
-.g3{
-    background-color: #EE2E24;
-    grid-column: span 3;
+    background-color: #015025;
+    background-image: url(../img/Hat.svg);
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
 }
 .g8{
     background-color: #FFAFCA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .g9{
     background-color: #00662F;
@@ -60,7 +73,7 @@ body{
     background-color: #00662F;
 }
 .g15{
-    background-color: #EE2E24;
+    background-color: #F3EBDD;
 }
 .g16{
     background-color: #FFAFCA;
@@ -71,4 +84,74 @@ body{
 }
 .g18{
     background-color: #FFAFCA;
+}
+
+.tickers {
+    position: absolute;
+    white-space: nowrap;
+    background: #FFAFCA;
+    overflow: hidden;
+    height: 50%;
+    width: 100%;
+}
+
+.ticker__head {
+    text-align: center;
+    margin-left: 1%;
+    font-family: OrtlandRegular;
+}
+
+p{
+    font-family: OrtlandRegular;;
+    font-size: 5vw;
+    color: #F3EBDD;
+}
+
+.st_ad{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donut{
+    background-image: url(../img/Donut.svg);
+    animation: don 2s ease-in-out infinite both;
+    height: 95%;
+    width: 95%;
+    background-size: 100% 100%;
+}
+.line_1{
+    background-image: url(../img/Line1.svg);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-size: 100% 100%;
+    animation: lin_1 2s linear infinite both;
+}
+.line_2{
+    background-image: url(../img/Line2.svg);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-size: 100% 100%;
+    animation: lin_2 2s linear infinite both;
+}
+.line_3{
+    background-image: url(../img/Line3.svg);
+    height: 25%;
+    position: absolute;
+    width: 25%;
+    background-size: 100% 100%;
+    animation: lin_3 2s ease-in-out infinite both;
+}
+.snow{
+    background-image: url(../img/Snowflake.svg);
+    height: 50%;
+    position: absolute;
+    width: 50%;
+    background-size: 100% 100%;
+    animation: snow_rot 3s ease-in-out infinite both;
 }

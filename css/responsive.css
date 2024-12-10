@@ -1,9 +1,26 @@
-@media screen and (min-width: 1921px) {
-  
+@media screen and (min-width: 1920px) {
+    body{
+        height: 1096px;
+        /* height: 86.6vh; */
+    }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    body{
+        height: 824px;
+    }
+}
 
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+    body{
+        height: 780px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+    body{
+        height: 732px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
