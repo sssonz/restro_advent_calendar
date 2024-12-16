@@ -244,7 +244,7 @@ body{
     animation: num 3s ease-in-out infinite;
 }
 
-p{
+.num{
     font-family: OrtlandRegular;;
     font-size: 5vw;
     color: #F3EBDD;
@@ -291,6 +291,18 @@ p{
     align-items: center;
     justify-content: center;
     position: relative;
+    animation-play-state: running;
+}
+.bl_8:hover .line_1{
+    animation-play-state: paused;
+}
+
+.bl_8:hover .line_2{
+    animation-play-state: paused;
+}
+
+.bl_8:hover .line_3{
+    animation-play-state: paused;
 }
 
 .line_1{
@@ -323,6 +335,42 @@ p{
 .bl_9{
     background-color: #00662F;
     grid-row: span 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.burger_1{
+    height: auto;
+    position: absolute;
+    width: 100%;
+    top: 0vw;
+    animation: burger_1 3s linear infinite;
+}
+
+.burger_2{
+    height: auto;
+    position: absolute;
+    width: 100%;
+    bottom: 0vw;
+    animation: burger_2 3s linear infinite;
+    animation-delay: 2s;
+}
+
+.burger_3{
+    height: auto;
+    position: absolute;
+    width: 100%;
+    bottom: 0vw;
+    animation: burger_3 3s linear infinite;
+}
+
+.burger_star{
+    height: 27%;
+    position: absolute;
+    width: 22%;
+    animation: burger_star 3s linear infinite;
 }
 
 .bl_10{
@@ -384,26 +432,87 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation-play-state: paused;
+}
+.bl_11:hover .letter_1{
+    animation-play-state: running;
+    animation: letter_1 3s ease-in-out;
+}
+
+.bl_11:hover .letter_2{
+    animation-play-state: running;
+    animation: letter_2 3s ease-in-out;
+}
+
+.bl_11:hover .letter_3{
+    animation-play-state: running;
+    animation: letter_3 3s ease-in-out;
+}
+
+.bl_11:hover .letter_4{
+    animation-play-state: running;
+    animation: letter_4 3s ease-in-out;
+}
+
+.bl_11:hover .letter_5{
+    animation-play-state: running;
+    animation: letter_5 3s ease-in-out;
+}
+
+.bl_11:hover .letter_6{
+    animation-play-state: running;
+    animation: letter_6 3s ease-in-out;
+}
+
+.bl_11:hover .letter_7{
+    animation-play-state: running;
+    animation: letter_7 3s ease-in-out;
+}
+
+.bl_11:hover .letter_8{
+    animation-play-state: running;
+    animation: letter_8 3s ease-in-out;
+}
+
+.bl_11:hover .letter_9{
+    animation-play-state: running;
+    animation: letter_9 3s ease-in-out;
+}
+
+.bl_11:hover .letter_10{
+    animation-play-state: running;
+    animation: letter_10 3s ease-in-out;
+}
+
+.bl_11:hover .letter_11{
+    animation-play-state: running;
+    animation: letter_11 3s ease-in-out;
+}
+
+.bl_11:hover .letter_12{
+    animation-play-state: running;
+    animation: letter_12 3s ease-in-out;
+}
+
+.bl_11:hover .letter_13{
+    animation-play-state: running;
+    animation: letter_13 3s ease-in-out;
+}
+
+.bl_11:hover .letter_14{
+    animation-play-state: running;
+    animation: letter_14 3s ease-in-out;
 }
 
 .text{
-    font-family: Arapey-Regular;
     color: #F3EBDD;
-    font-size: 3.8vw;
     text-align: center;
+    display: flex;
 }
 
-/*span{
-    margin-left: -0.8vw;
-}*/
-
-.letter1{
-    content: 'M';
-    animation-play-state: paused;
-    animation: letter_1 2s linear infinite;
-}
-.letter1:hover{
-    animation-play-state: running;
+p{
+    font-family: Arapey-Regular;
+    font-size: 3.8vw;
 }
 
 .bl_12{
@@ -503,6 +612,85 @@ p{
 .bl_17{
     background-color: #00662F;
     grid-column: span 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bl_pizza{
+    display: flex;
+    gap: 1.5vw;
+    width: 55%;
+    height: 80%;
+}
+
+.pizza_1{
+    width: 100%;
+    height: 100%;
+    animation: pizza1 1.5s ease-in-out infinite;
+}
+
+.pizza_2{
+    width: 100%;
+    height: 100%;
+    animation: pizza2 1.5s ease-in-out infinite;
+}
+
+.clink{
+    position: absolute;
+    margin-top: 0.2vw;
+    width: 54%;
+    height: 35%;
+    animation: clink 1.5s ease-in-out infinite;
+}
+
+.text_clink{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation-play-state: paused;
+}
+.text_clink:hover .text_clink_1 {
+    animation-play-state: running;
+    animation: text_clink 1.5s ease-in-out infinite;
+    opacity: 1;
+}
+.text_clink:hover .text_clink_2 {
+    animation-play-state: running;
+    animation: text_clink 1.5s ease-in-out infinite;
+    opacity: 1;
+}
+.text_clink:hover .text_clink_3 {
+    animation-play-state: running;
+    animation: text_clink 1.5s ease-in-out infinite;
+    opacity: 1;
+}
+
+.text_clink_1{
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    opacity: 0;
+}
+
+.text_clink_2{
+    position: absolute;
+    width: 50%;
+    left: 7vw;
+    bottom: 0vw;
+    height: 35%;
+    opacity: 0;
+}
+
+.text_clink_3{
+    position: absolute;
+    width: 30%;
+    right: -1vw;
+    top: 5.3vw;
+    height: 30%;
+    opacity: 0;
 }
 
 .bl_18{
