@@ -248,6 +248,7 @@ body{
     font-family: OrtlandRegular;;
     font-size: 5vw;
     color: #F3EBDD;
+    margin-top: 1.2vw;
 }
 
 .bl_6{
@@ -346,7 +347,7 @@ body{
     position: absolute;
     width: 100%;
     top: 0vw;
-    animation: burger_1 3s linear infinite;
+    animation: burger_1 5s linear infinite;
 }
 
 .burger_2{
@@ -354,8 +355,7 @@ body{
     position: absolute;
     width: 100%;
     bottom: 0vw;
-    animation: burger_2 3s linear infinite;
-    animation-delay: 2s;
+    animation: burger_2 5s linear infinite;
 }
 
 .burger_3{
@@ -363,14 +363,14 @@ body{
     position: absolute;
     width: 100%;
     bottom: 0vw;
-    animation: burger_3 3s linear infinite;
+    animation: burger_3 5s linear infinite;
 }
 
 .burger_star{
     height: 27%;
     position: absolute;
     width: 22%;
-    animation: burger_star 3s linear infinite;
+    animation: burger_star 5s linear infinite;
 }
 
 .bl_10{
@@ -694,7 +694,40 @@ p{
 }
 
 .bl_18{
+    background-color: #F3EBDD;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.bl_18:hover .num23{
+    animation-play-state: running;
+    animation: num_23 3s ease-in-out infinite;
+}
+
+.num23 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    animation-play-state: paused;
+    justify-content: center;
     background-color: #FFAFCA;
+}
+
+.p_23{
+    font-family: OrtlandRegular;
+    margin-top: 1.2vw;
+    font-size: 5vw;
+    color: #00662F;
+}
+
+.footer{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    animation: footer 6s linear infinite;
 }
 
 span{
