@@ -840,6 +840,39 @@ p{
     animation: footer 6s linear infinite;
 }
 
+.bl_19{
+    background-color: #00662F;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bl_20{
+    background-color: #00662F;
+    position: relative;
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.bl_21{
+    display: none;
+    background-color: #EE2E24;
+}
+
+.bl_22{
+    order: 22;
+    background-color: #FFAFCA;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation-play-state: running;
+}
+
 span{
     width: 50px;
     height: 50px;
