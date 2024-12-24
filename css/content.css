@@ -231,17 +231,22 @@ body{
 }
 
 .bl_5{
-    background-color: #F3EBDD;
+    background-color: #ce231a;
+    background-image: url(../img/Wreath.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
 }
 
-.num22 {
+.num_22 {
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
     background-color: #EE2E24;
-    animation: num 3s ease-in-out infinite;
+    animation: num_22 1s ease-in-out infinite;
 }
 
 .num{
@@ -259,10 +264,8 @@ body{
 }
 
 .present{
-    background-image: url(../img/Present.svg);
-    background-repeat: no-repeat;
-    height: 100vw;
-    width: 100vw;
+    height: 100%;
+    width: auto;
     margin-left: -18.5%;
     transition: all 0.5s;
     animation: present 0.5s steps(7) infinite;
@@ -276,14 +279,14 @@ body{
     background-size: 100% 100%;
 }
 
-.num25 {
+.num_25 {
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
     background-color: #00662F;
-    animation: num 3s ease-in-out infinite;
+    animation: num_25 3s ease-in-out infinite;
 }
 
 .bl_8{
@@ -577,17 +580,104 @@ p{
 }
 
 .bl_15{
-    background-color: #F3EBDD;
+    background-color: #ce231a;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-.num24 {
+.sweet_1{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: -1vw;
+    animation: sweet_1 5s linear infinite;
+}
+
+.sweet_2{
+    position: absolute;
+    left: 3vw;
+    width: 40%;
+    height: 40%;
+    animation: sweet_2 5s linear infinite;
+}
+
+.sweet_3{
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    right: -3.3vw;
+    animation: sweet_3 5s linear infinite;
+}
+
+.sweet_4{
+    position: absolute;
+    width: 47%;
+    height: 47%;
+    left: 3vw;
+    animation: sweet_4 5s linear infinite;
+}
+
+.sweet_5{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 1.5vw;
+    animation: sweet_5 5s linear infinite;
+}
+
+.sweet_6{
+    position: absolute;
+    left: -0.5vw;
+    width: 40%;
+    height: 40%;
+    animation: sweet_6 5s linear infinite;
+}
+
+.sweet_7{
+    position: absolute;
+    width: 47%;
+    height: 47%;
+    right: 2vw;
+    animation: sweet_7 5s linear infinite;
+}
+
+.sweet_8{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: 0vw;
+    animation: sweet_8 5s linear infinite;
+}
+
+.sweet_9{
+    position: absolute;
+    right: -1vw;
+    width: 40%;
+    height: 40%;
+    animation: sweet_9 5s linear infinite;
+}
+
+.sweet_10{
+    position: absolute;
+    right: 5vw;
+    width: 50%;
+    height: 50%;
+    animation: sweet_10 5s linear infinite;
+}
+
+.num_24 {
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
     background-color: #EE2E24;
-    animation: num 3s ease-in-out infinite;
+    animation: num_24 4s ease-in-out infinite;
+}
+.bl_15:hover .num_24{
+    animation-play-state: paused;
 }
 
 .bl_16{
@@ -700,12 +790,12 @@ p{
     align-items: center;
     overflow: hidden;
 }
-.bl_18:hover .num23{
+.bl_18:hover .num_23{
     animation-play-state: running;
-    animation: num_23 3s ease-in-out infinite;
+    animation: num_23 5s ease-in-out infinite;
 }
 
-.num23 {
+.num_23 {
     display: flex;
     width: 100%;
     height: 100%;
