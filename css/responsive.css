@@ -21,6 +21,7 @@
     body{
         height: 824px;
     }
+
     .present{
         height: 100%;
         width: auto;
@@ -93,6 +94,15 @@
         height: 1230px;
     }
 
+    @keyframes present1 {
+        0% {
+          transform: translateX(0vw);
+        }
+        100% {
+          transform: translateX(-140.15vw);
+        }
+    }
+
     .grid_bl{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -109,13 +119,34 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        flex-direction: column;
+        gap: 17%;
     }
     
-    .snow{
+    .snow1{
         background-image: url(../img/Snowflake.svg);
         height: 50%;
-        position: absolute;
+        position: relative;
+        width: 50%;
+        background-size: 100% 100%;
+        animation: snow_rot 3s ease-in-out infinite both;
+    }
+
+    .snow2{
+        background-image: url(../img/Snowflake.svg);
+        height: 50%;
+        display: flex;
+        position: relative;
+        width: 50%;
+        background-size: 100% 100%;
+        animation: snow_rot 3s ease-in-out infinite both;
+    }
+
+    .snow3{
+        background-image: url(../img/Snowflake.svg);
+        height: 50%;
+        display: flex;
+        position: relative;
         width: 50%;
         background-size: 100% 100%;
         animation: snow_rot 3s ease-in-out infinite both;
@@ -140,8 +171,9 @@
     
     .ticker {
         display: flex;
+        margin-top: 1%;
         position: absolute;
-        font-size: 15vw;
+        font-size: 20vw;
         font-style: normal;
         line-height: 115%;
         color: #EE2E24;
@@ -178,11 +210,11 @@
     
     .advent{
         background-color: #EE2E24;
-        padding-top: 2vw;
+        padding-top: 3vw;
         color: #FFAFCA;
         text-align: center;
         font-family: Ortland;
-        font-size: 6vw;
+        font-size: 8vw;
         font-style: normal;
         line-height: 100%;
         text-transform: uppercase;
@@ -275,29 +307,29 @@
     .bl_H{
         display: flex;
         flex-direction: column;
-        margin-top: 1.5vw;
+        margin-top: 2.2vw;
         margin-left: 2vw;
-        gap: 1.7vw;
+        gap: 1.1vw;
         position: absolute;
     }
     
     .H_1{
         font-family: OrtlandRegular;;
-        font-size: 8vw;
+        font-size: 12vw;
         color: #F3EBDD;
         animation: text_H 1s ease-in-out infinite;
     }
     
     .H_2{
         font-family: OrtlandRegular;;
-        font-size: 8vw;
+        font-size: 12vw;
         color:  #00662F;
         animation: text_H 1s ease-in-out infinite;
     }
     
     .H_3{
         font-family: OrtlandRegular;;
-        font-size: 8vw;
+        font-size: 12vw;
         color:  #EE2E24;
         animation: text_H 1s ease-in-out infinite;
     }
@@ -406,7 +438,7 @@
     
     p{
         font-family: Arapey-Regular;
-        font-size: 3.8vw;
+        font-size: 5vw;
     }
 
     .bl_12:nth-child(12){
@@ -430,9 +462,9 @@
     }
     
     .hand{
-        height: 3vw;
-        top: 2.5vw;
-        right: 2vw;
+        height: 4vw;
+        top: 4vw;
+        right: 3vw;
         position: absolute;
         animation: hand 1s ease-in-out infinite both;
     }
@@ -450,7 +482,7 @@
         width: auto;
         margin-left: -18.5%;
         transition: all 0.5s;
-        animation: present 0.5s steps(7) infinite;
+        animation: present1 0.5s steps(7) infinite;
     }
 
     .bl_5:nth-child(5){
@@ -604,7 +636,7 @@
     .text_clink_2{
         position: absolute;
         width: 50%;
-        left: 7vw;
+        left: 10vw;
         bottom: 0vw;
         height: 35%;
         opacity: 0;
@@ -823,8 +855,8 @@
     .candy_1{
         position: absolute;
         left: 5%;
-        width: 3vw;
-        height: 6vw;
+        width: 6vw;
+        height: 9vw;
         animation-play-state: running;
         background-image: url(../img/Candy.svg);
         background-size: 100% 100%;
@@ -837,9 +869,9 @@
     .candy_2{
         position: absolute;
         left: 25%;
-        width: 4vw;
+        width: 9vw;
         animation-play-state: running;
-        height: 7vw;
+        height: 12vw;
         background-image: url(../img/Candy.svg);
         background-size: 100% 100%;
         animation: candy_2 2s infinite ease-out;
@@ -851,9 +883,9 @@
     .candy_3{
         position: absolute;
         left: 50%;
-        width: 4vw;
+        width: 9vw;
         animation-play-state: running;
-        height: 7vw;
+        height: 12vw;
         background-image: url(../img/Candy.svg);
         background-size: 100% 100%;
         animation: candy_3 3s infinite ease-out;
@@ -864,9 +896,9 @@
     
     .candy_4{
         position: absolute;
-        left: 75%;
-        width: 4vw;
-        height: 7vw;
+        left: 88%;
+        width: 9vw;
+        height: 12vw;
         animation-play-state: running;
         background-image: url(../img/Candy.svg);
         background-size: 100% 100%;
@@ -878,9 +910,9 @@
     
     .candy_5{
         position: absolute;
-        left: 40%;
-        width: 4vw;
-        height: 7vw;
+        left: 70%;
+        width: 9vw;
+        height: 12vw;
         animation-play-state: running;
         background-image: url(../img/Candy.svg);
         background-size: 100% 100%;
@@ -893,8 +925,8 @@
     .candy_6{
         position: absolute;
         left: 35%;
-        width: 3vw;
-        height: 6vw;
+        width: 8vw;
+        height: 11vw;
         animation-play-state: running;
         background-image: url(../img/Candy.svg);
         background-size: 100% 100%;
@@ -907,8 +939,8 @@
     .candy_7{
         position: absolute;
         left: 65%;
-        width: 5vw;
-        height: 8vw;
+        width: 10vw;
+        height: 13vw;
         animation-play-state: running;
         background-image: url(../img/Candy.svg);
         background-size: 100% 100%;
@@ -921,8 +953,8 @@
     .candy_8{
         position: absolute;
         left: 10%;
-        width: 5vw;
-        height: 8vw;
+        width: 10vw;
+        height: 13vw;
         animation-play-state: running;
         background-image: url(../img/Candy.svg);
         background-size: 100% 100%;
@@ -933,12 +965,884 @@
     }
 }
 
-/* Горизонтальная ориентация для планшета (768px) 
+/* Горизонтальная ориентация для планшета (768px)  */
 @media screen and (min-width: 415px) and (max-width: 768px) and (orientation: landscape) {
+    body{
+        height: 920px;
+    }
 
+    @keyframes present1 {
+        0% {
+          transform: translateX(0vw);
+        }
+        100% {
+          transform: translateX(-139.85vw);
+        }
+    }
+
+    .grid_bl{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        height: 100%;
+    }
+
+    .bl_4:nth-child(4){
+        order: 1;
+        background-color: #00662F;
+        grid-row: span 2;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 17%;
+    }
+    
+    .snow1{
+        background-image: url(../img/Snowflake.svg);
+        height: 50%;
+        position: relative;
+        width: 50%;
+        background-size: 100% 100%;
+        animation: snow_rot 3s ease-in-out infinite both;
+    }
+
+    .snow2{
+        background-image: url(../img/Snowflake.svg);
+        height: 50%;
+        display: flex;
+        position: relative;
+        width: 50%;
+        background-size: 100% 100%;
+        animation: snow_rot 3s ease-in-out infinite both;
+    }
+
+    .snow3{
+        background-image: url(../img/Snowflake.svg);
+        height: 50%;
+        display: flex;
+        position: relative;
+        width: 50%;
+        background-size: 100% 100%;
+        animation: snow_rot 3s ease-in-out infinite both;
+    }
+    
+    .bl_3:nth-child(3){
+        order: 2;
+        background-color: #EE2E24;
+        grid-column: span 3;
+        grid-row: span 2;
+        position: relative;
+    }
+    
+    .tickers {
+        position: absolute;
+        white-space: nowrap;
+        background: #FFAFCA;
+        overflow: hidden;
+        height: 50%;
+        width: 100%;
+    }
+    
+    .ticker {
+        display: flex;
+        margin-top: 1%;
+        position: absolute;
+        font-size: 20vw;
+        font-style: normal;
+        line-height: 115%;
+        color: #EE2E24;
+        background-size: 100% 100%;
+        animation: ticker 20s linear, marquee 20s linear 20s infinite;
+    }
+    
+    .ticker__head {
+        text-align: center;
+        margin-left: 1%;
+        font-family: OrtlandRegular;
+    }
+    
+    .st_ad{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .santa{
+        background-image: url(../img/Santa.svg);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        animation: santa 2s linear infinite both;
+        animation-duration: 3s;
+        background-size: 100% 100%;
+    }
+    
+    .advent{
+        background-color: #EE2E24;
+        padding-top: 3vw;
+        color: #FFAFCA;
+        text-align: center;
+        font-family: Ortland;
+        font-size: 8vw;
+        font-style: normal;
+        line-height: 100%;
+        text-transform: uppercase;
+        animation: advent 2s linear infinite both;
+        animation-duration: 3s;
+        background-size: 100% 100%;
+    }
+
+    .bl_7:nth-child(7){
+        order: 3;
+        background-color: #015025;
+        background-image: url(../img/Hat.svg);
+        height: 100%;
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    
+    .num_25 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #00662F;
+        animation: num_25 3s ease-in-out infinite;
+    }
+
+    .num{
+        font-family: OrtlandRegular;;
+        font-size: 5vw;
+        color: #F3EBDD;
+        margin-top: 1.2vw;
+    }
+
+    .bl_8:nth-child(8){
+        order: 4;
+        background-color: #FFAFCA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        animation-play-state: running;
+    }
+    .bl_8:hover .line_1{
+        animation-play-state: paused;
+    }
+    
+    .bl_8:hover .line_2{
+        animation-play-state: paused;
+    }
+    
+    .bl_8:hover .line_3{
+        animation-play-state: paused;
+    }
+    
+    .line_1{
+        background-image: url(../img/Line1.svg);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        background-size: 100% 100%;
+        animation: lin_1 2s linear infinite;
+    }
+    
+    .line_2{
+        background-image: url(../img/Line2.svg);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        background-size: 100% 100%;
+        animation: lin_2 2s linear infinite;
+    }
+    
+    .line_3{
+        background-image: url(../img/Line3.svg);
+        height: 25%;
+        position: absolute;
+        width: 25%;
+        background-size: 100% 100%;
+        animation: lin_3 2s ease-in-out infinite;
+    }
+
+    .bl_10:nth-child(10){
+        order: 5;
+        background-color: #FFAFCA;
+        grid-row: span 2;
+        position: relative;
+    }
+    
+    .bl_H{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.2vw;
+        margin-left: 2vw;
+        gap: 1.1vw;
+        position: absolute;
+    }
+    
+    .H_1{
+        font-family: OrtlandRegular;;
+        font-size: 12vw;
+        color: #F3EBDD;
+        animation: text_H 1s ease-in-out infinite;
+    }
+    
+    .H_2{
+        font-family: OrtlandRegular;;
+        font-size: 12vw;
+        color:  #00662F;
+        animation: text_H 1s ease-in-out infinite;
+    }
+    
+    .H_3{
+        font-family: OrtlandRegular;;
+        font-size: 12vw;
+        color:  #EE2E24;
+        animation: text_H 1s ease-in-out infinite;
+    }
+    
+    .bl_cup{
+        display: flex;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        gap: 0.3vw;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .cup{
+        width: 100%;
+        height: 100%;
+        animation: cup 1s ease-in-out infinite;
+    }
+
+    .bl_11:nth-child(11){
+        order: 6;
+        background-color: #00662F;
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        animation-play-state: paused;
+    }
+    .bl_11:hover .letter_1{
+        animation-play-state: running;
+        animation: letter_1 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_2{
+        animation-play-state: running;
+        animation: letter_2 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_3{
+        animation-play-state: running;
+        animation: letter_3 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_4{
+        animation-play-state: running;
+        animation: letter_4 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_5{
+        animation-play-state: running;
+        animation: letter_5 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_6{
+        animation-play-state: running;
+        animation: letter_6 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_7{
+        animation-play-state: running;
+        animation: letter_7 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_8{
+        animation-play-state: running;
+        animation: letter_8 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_9{
+        animation-play-state: running;
+        animation: letter_9 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_10{
+        animation-play-state: running;
+        animation: letter_10 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_11{
+        animation-play-state: running;
+        animation: letter_11 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_12{
+        animation-play-state: running;
+        animation: letter_12 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_13{
+        animation-play-state: running;
+        animation: letter_13 3s ease-in-out;
+    }
+    
+    .bl_11:hover .letter_14{
+        animation-play-state: running;
+        animation: letter_14 3s ease-in-out;
+    }
+    
+    .text{
+        color: #F3EBDD;
+        text-align: center;
+        display: flex;
+    }
+    
+    p{
+        font-family: Arapey-Regular;
+        font-size: 5vw;
+    }
+
+    .bl_12:nth-child(12){
+        order: 7;
+        background-color: #FFAFCA;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .snowman{
+        background-image: url(../img/Snowman.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-size: 100% 100%;
+    }
+    
+    .hand{
+        height: 4vw;
+        top: 4vw;
+        right: 3vw;
+        position: absolute;
+        animation: hand 1s ease-in-out infinite both;
+    }
+
+    .bl_6:nth-child(6){
+        order: 8;
+        background-color: #EE2E24;
+        grid-row: span 2;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .present{
+        height: 100%;
+        width: auto;
+        margin-left: -18.5%;
+        transition: all 0.5s;
+        animation: present1 0.5s steps(7) infinite;
+    }
+
+    .bl_5:nth-child(5){
+        order: 9;
+        background-color: #ce231a;
+        background-image: url(../img/Wreath.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+    }
+    
+    .num_22 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #EE2E24;
+        animation: num_22 1s ease-in-out infinite;
+    }
+
+    .bl_16:nth-child(16){
+        order: 10;
+        background-color: #FFAFCA;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .tree{
+        background-image: url(../img/Tree.svg);
+        background-repeat: no-repeat;
+        height: 300%;
+        width: 100%;
+        margin-top: -1.8vw;
+        position: absolute;
+        background-size: 100% 100%;
+        animation: tree 3.5s linear infinite;
+    }
+
+    .bl_9:nth-child(9){
+        order: 11;
+        background-color: #00662F;
+        grid-row: span 2;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .burger_1{
+        height: auto;
+        position: absolute;
+        width: 100%;
+        top: 0vw;
+        animation: burger_1 5s linear infinite;
+    }
+    
+    .burger_2{
+        height: auto;
+        position: absolute;
+        width: 100%;
+        bottom: 0vw;
+        animation: burger_2 5s linear infinite;
+    }
+    
+    .burger_3{
+        height: auto;
+        position: absolute;
+        width: 100%;
+        bottom: 0vw;
+        animation: burger_3 5s linear infinite;
+    }
+    
+    .burger_star{
+        height: 27%;
+        position: absolute;
+        width: 22%;
+        animation: burger_star 5s linear infinite;
+    }
+
+    .bl_17:nth-child(17){
+        order: 12;
+        background-color: #00662F;
+        grid-column: span 2;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .bl_pizza{
+        display: flex;
+        gap: 1.5vw;
+        width: 55%;
+        height: 80%;
+    }
+    
+    .pizza_1{
+        width: 100%;
+        height: 100%;
+        animation: pizza1 1.5s ease-in-out infinite;
+    }
+    
+    .pizza_2{
+        width: 100%;
+        height: 100%;
+        animation: pizza2 1.5s ease-in-out infinite;
+    }
+    
+    .clink{
+        position: absolute;
+        margin-top: 0.2vw;
+        width: 54%;
+        height: 35%;
+        animation: clink 1.5s ease-in-out infinite;
+    }
+    
+    .text_clink{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        animation-play-state: paused;
+    }
+    .text_clink:hover .text_clink_1 {
+        animation-play-state: running;
+        animation: text_clink 1.5s ease-in-out infinite;
+        opacity: 1;
+    }
+    .text_clink:hover .text_clink_2 {
+        animation-play-state: running;
+        animation: text_clink 1.5s ease-in-out infinite;
+        opacity: 1;
+    }
+    .text_clink:hover .text_clink_3 {
+        animation-play-state: running;
+        animation: text_clink 1.5s ease-in-out infinite;
+        opacity: 1;
+    }
+    
+    .text_clink_1{
+        position: absolute;
+        width: 25%;
+        height: 50%;
+        opacity: 0;
+    }
+    
+    .text_clink_2{
+        position: absolute;
+        width: 50%;
+        left: 10vw;
+        bottom: 0vw;
+        height: 35%;
+        opacity: 0;
+    }
+    
+    .text_clink_3{
+        position: absolute;
+        width: 30%;
+        right: -1vw;
+        top: 5.3vw;
+        height: 30%;
+        opacity: 0;
+    }
+
+    .bl_13:nth-child(13){
+        order: 13;
+        background-color: #EE2E24;
+    }
+    
+    .star{
+        background-image: url(../img/Star.svg);
+        width: 100%;
+        height: 100%;
+        animation: star 1.5s ease-in-out infinite both;
+        background-size: 100% 100%;
+    }
+
+    .bl_18:nth-child(18){
+        order: 14;
+        background-color: #F3EBDD;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    .bl_18:hover .num_23{
+        animation-play-state: running;
+        animation: num_23 5s ease-in-out infinite;
+    }
+    
+    .num_23 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        align-items: center;
+        animation-play-state: paused;
+        justify-content: center;
+        background-color: #FFAFCA;
+    }
+    
+    .p_23{
+        font-family: OrtlandRegular;
+        margin-top: 1.2vw;
+        font-size: 5vw;
+        color: #00662F;
+    }
+    
+    .footer{
+        width: auto;
+        height: 100%;
+        position: absolute;
+        animation: footer 6s linear infinite;
+    }
+
+    .bl_15:nth-child(15){
+        order: 15;
+        background-color: #ce231a;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .sweet_1{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        left: -1vw;
+        animation: sweet_1 5s linear infinite;
+    }
+    
+    .sweet_2{
+        position: absolute;
+        left: 3vw;
+        width: 40%;
+        height: 40%;
+        animation: sweet_2 5s linear infinite;
+    }
+    
+    .sweet_3{
+        position: absolute;
+        width: 45%;
+        height: 45%;
+        right: -3.3vw;
+        animation: sweet_3 5s linear infinite;
+    }
+    
+    .sweet_4{
+        position: absolute;
+        width: 47%;
+        height: 47%;
+        left: 3vw;
+        animation: sweet_4 5s linear infinite;
+    }
+    
+    .sweet_5{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        right: 1.5vw;
+        animation: sweet_5 5s linear infinite;
+    }
+    
+    .sweet_6{
+        position: absolute;
+        left: -0.5vw;
+        width: 40%;
+        height: 40%;
+        animation: sweet_6 5s linear infinite;
+    }
+    
+    .sweet_7{
+        position: absolute;
+        width: 47%;
+        height: 47%;
+        right: 2vw;
+        animation: sweet_7 5s linear infinite;
+    }
+    
+    .sweet_8{
+        position: absolute;
+        width: 40%;
+        height: 40%;
+        left: 0vw;
+        animation: sweet_8 5s linear infinite;
+    }
+    
+    .sweet_9{
+        position: absolute;
+        right: -1vw;
+        width: 40%;
+        height: 40%;
+        animation: sweet_9 5s linear infinite;
+    }
+    
+    .sweet_10{
+        position: absolute;
+        right: 5vw;
+        width: 50%;
+        height: 50%;
+        animation: sweet_10 5s linear infinite;
+    }
+
+    .num_24 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #EE2E24;
+        animation: num_24 4s ease-in-out infinite;
+    }
+    .bl_15:hover .num_24{
+        animation-play-state: paused;
+    }
+
+    .bl_1:nth-child(1){
+        order: 16;
+        background-color: #FFAFCA;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .donut{
+        background-image: url(../img/Donut.svg);
+        animation: donut 2s ease-in-out infinite both;
+        height: 95%;
+        width: 95%;
+        background-size: 100% 100%;
+    }
+
+    .bl_14:nth-child(14){
+        order: 17;
+        background-color: #00662F;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .patern{
+        background-image: url(../img/Patern.svg);
+        background-repeat: no-repeat;
+        height: 110%;
+        width: 110%;
+        position: absolute;
+        background-size: 310% 100%;
+        animation: patern_in 3s linear infinite;
+    }
+    .patern:hover{
+        animation: patern_out 3s linear infinite;
+    }
+    
+    .bl_2:nth-child(2){
+        order: 18;
+        background-color: #EE2E24;
+        grid-column: span 2;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .candy_1{
+        position: absolute;
+        left: 5%;
+        width: 6vw;
+        height: 9vw;
+        animation-play-state: running;
+        background-image: url(../img/Candy.svg);
+        background-size: 100% 100%;
+        animation: candy_1 1.2s infinite ease-out;
+    }
+    .candy_1:hover{
+        animation-play-state: paused;
+    }
+    
+    .candy_2{
+        position: absolute;
+        left: 25%;
+        width: 9vw;
+        animation-play-state: running;
+        height: 12vw;
+        background-image: url(../img/Candy.svg);
+        background-size: 100% 100%;
+        animation: candy_2 2s infinite ease-out;
+    }
+    .candy_2:hover{
+      animation-play-state: paused;
+    }
+    
+    .candy_3{
+        position: absolute;
+        left: 50%;
+        width: 9vw;
+        animation-play-state: running;
+        height: 12vw;
+        background-image: url(../img/Candy.svg);
+        background-size: 100% 100%;
+        animation: candy_3 3s infinite ease-out;
+    }
+    .candy_3:hover{
+      animation-play-state: paused;
+    }
+    
+    .candy_4{
+        position: absolute;
+        left: 88%;
+        width: 9vw;
+        height: 12vw;
+        animation-play-state: running;
+        background-image: url(../img/Candy.svg);
+        background-size: 100% 100%;
+        animation: candy_4 1.5s infinite ease-out;
+    }
+    .candy_4:hover{
+      animation-play-state: paused;
+    }
+    
+    .candy_5{
+        position: absolute;
+        left: 70%;
+        width: 9vw;
+        height: 12vw;
+        animation-play-state: running;
+        background-image: url(../img/Candy.svg);
+        background-size: 100% 100%;
+        animation: candy_5 2.5s infinite ease-out;
+    }
+    .candy_5:hover{
+      animation-play-state: paused;
+    }
+    
+    .candy_6{
+        position: absolute;
+        left: 35%;
+        width: 8vw;
+        height: 11vw;
+        animation-play-state: running;
+        background-image: url(../img/Candy.svg);
+        background-size: 100% 100%;
+        animation: candy_6 1.5s infinite ease-out;
+    }
+    .candy_6:hover{
+      animation-play-state: paused;
+    }
+    
+    .candy_7{
+        position: absolute;
+        left: 65%;
+        width: 10vw;
+        height: 13vw;
+        animation-play-state: running;
+        background-image: url(../img/Candy.svg);
+        background-size: 100% 100%;
+        animation: candy_7 3.5s infinite ease-out;
+    }
+    .candy_7:hover{
+      animation-play-state: paused;
+    }
+    
+    .candy_8{
+        position: absolute;
+        left: 10%;
+        width: 10vw;
+        height: 13vw;
+        animation-play-state: running;
+        background-image: url(../img/Candy.svg);
+        background-size: 100% 100%;
+        animation: candy_8 1s infinite ease-out;
+    }
+    .candy_8:hover{
+      animation-play-state: paused;
+    }
 }
 
-/* Вертикальная ориентация для планшета (768px)
+/* Вертикальная ориентация для планшета (768px) */
 @media screen and (min-width: 415px) and (max-width: 768px) and (orientation: portrait) {
 
 }

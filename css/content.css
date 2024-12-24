@@ -221,7 +221,27 @@ body{
     justify-content: center;
 }
 
-.snow{
+.snow1{
+    background-image: url(../img/Snowflake.svg);
+    height: 50%;
+    position: absolute;
+    width: 50%;
+    background-size: 100% 100%;
+    animation: snow_rot 3s ease-in-out infinite both;
+}
+
+.snow2{
+    display: none;
+    background-image: url(../img/Snowflake.svg);
+    height: 50%;
+    position: absolute;
+    width: 50%;
+    background-size: 100% 100%;
+    animation: snow_rot 3s ease-in-out infinite both;
+}
+
+.snow3{
+    display: none;
     background-image: url(../img/Snowflake.svg);
     height: 50%;
     position: absolute;
