@@ -200,6 +200,12 @@ body{
 .advent{
     background-color: #EE2E24;
     padding-top: 2vw;
+    animation: advent 2s linear infinite both;
+    animation-duration: 3s;
+    background-size: 100% 100%;
+}
+
+.p_ad{
     color: #FFAFCA;
     text-align: center;
     font-family: Ortland;
@@ -207,9 +213,6 @@ body{
     font-style: normal;
     line-height: 100%;
     text-transform: uppercase;
-    animation: advent 2s linear infinite both;
-    animation-duration: 3s;
-    background-size: 100% 100%;
 }
 
 .bl_4{

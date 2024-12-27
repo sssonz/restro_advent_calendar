@@ -10,7 +10,7 @@
 }
 
 /*(1680px)*/
-@media screen and (min-width: 1441px) and (max-width: 1680px) {
+@media screen and (min-width: 1445px) and (max-width: 1680px) {
     body{
         height: 959px;
     }
@@ -207,10 +207,16 @@
         animation-duration: 3s;
         background-size: 100% 100%;
     }
-    
+
     .advent{
         background-color: #EE2E24;
-        padding-top: 3vw;
+        padding-top: 3.2vw;
+        animation: advent 2s linear infinite both;
+        animation-duration: 3s;
+        background-size: 100% 100%;
+    }
+    
+    .p_ad{
         color: #FFAFCA;
         text-align: center;
         font-family: Ortland;
@@ -218,9 +224,6 @@
         font-style: normal;
         line-height: 100%;
         text-transform: uppercase;
-        animation: advent 2s linear infinite both;
-        animation-duration: 3s;
-        background-size: 100% 100%;
     }
 
     .bl_7:nth-child(7){
@@ -1000,7 +1003,7 @@
 }
 
 /* Вертикальная ориентация для планшета (768px) */
-@media screen and (min-width: 415px) and (max-width: 768px) and (orientation: portrait) {
+@media screen and (min-width: 416px) and (max-width: 768px) and (orientation: portrait) {
     body{
         height: 920px;
     }
@@ -1121,7 +1124,13 @@
     
     .advent{
         background-color: #EE2E24;
-        padding-top: 3vw;
+        padding-top: 3.2vw;
+        animation: advent 2s linear infinite both;
+        animation-duration: 3s;
+        background-size: 100% 100%;
+    }
+    
+    .p_ad{
         color: #FFAFCA;
         text-align: center;
         font-family: Ortland;
@@ -1129,9 +1138,6 @@
         font-style: normal;
         line-height: 100%;
         text-transform: uppercase;
-        animation: advent 2s linear infinite both;
-        animation-duration: 3s;
-        background-size: 100% 100%;
     }
 
     .bl_7:nth-child(7){
@@ -1911,7 +1917,7 @@
 }
 
 /* Вертикальная ориентация для мобильных устройств (414px)*/
-@media screen and (min-width: 361px) and (max-width: 414px) and (orientation: portrait) {
+@media screen and (min-width: 361px) and (max-width: 415px) and (orientation: portrait) {
     body{
         height: 3341px;
     }
@@ -1987,10 +1993,16 @@
         animation-duration: 3s;
         background-size: 100% 100%;
     }
-    
+
     .advent{
         background-color: #EE2E24;
-        padding-top: 3vw;
+        padding-top: 3.3vw;
+        animation: advent 2s linear infinite both;
+        animation-duration: 3s;
+        background-size: 100% 100%;
+    }
+    
+    .p_ad{
         color: #FFAFCA;
         text-align: center;
         font-family: Ortland;
@@ -1998,9 +2010,6 @@
         font-style: normal;
         line-height: 100%;
         text-transform: uppercase;
-        animation: advent 2s linear infinite both;
-        animation-duration: 3s;
-        background-size: 100% 100%;
     }
 
     .bl_4:nth-child(4){
@@ -2986,7 +2995,13 @@
     
     .advent{
         background-color: #EE2E24;
-        padding-top: 3vw;
+        padding-top: 3.3vw;
+        animation: advent 2s linear infinite both;
+        animation-duration: 3s;
+        background-size: 100% 100%;
+    }
+    
+    .p_ad{
         color: #FFAFCA;
         text-align: center;
         font-family: Ortland;
@@ -2994,9 +3009,6 @@
         font-style: normal;
         line-height: 100%;
         text-transform: uppercase;
-        animation: advent 2s linear infinite both;
-        animation-duration: 3s;
-        background-size: 100% 100%;
     }
 
     .bl_4:nth-child(4){
