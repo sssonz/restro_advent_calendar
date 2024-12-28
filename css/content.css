@@ -885,3 +885,15 @@ span{
     position: absolute;
     animation: snow 2s linear forwards;
   }
+
+.grx-trans-icon{
+    display: none;
+}
+
+.grx-trans{
+    display: none;
+}
+
+grx-trans{
+    display: none;
+}
